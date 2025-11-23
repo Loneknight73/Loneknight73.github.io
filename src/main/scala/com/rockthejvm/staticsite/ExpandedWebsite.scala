@@ -194,7 +194,7 @@ object ExpandedWebsite {
   }
 
   def renderBlog(): Unit = {
-    val resourcePath = os.Path("C:\\Users\\lanfr\\IdeaProjects\\scala-projects\\staticsite\\src\\main\\resources")
+    val resourcePath = os.pwd / "src/main/resources"
     val blogRoot = resourcePath / "articles"
     val staticRoot = resourcePath / "pages"
     val outPath = resourcePath / "blog_expanded_out"
